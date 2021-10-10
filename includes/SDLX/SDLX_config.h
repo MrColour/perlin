@@ -10,7 +10,7 @@
 # define WIN_TITLE	"Application"
 # define WIN_WIDTH	(304 * DISPLAY_SCALE)
 # define WIN_HEIGHT	(464 * DISPLAY_SCALE)
-# define WIN_POS_X	(4200)
+# define WIN_POS_X	(300)
 # define WIN_POS_Y	(100)
 
 # endif

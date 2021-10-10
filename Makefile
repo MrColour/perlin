@@ -1,6 +1,6 @@
 NAME = app
-FLAGS = -Wall -Wextra -Werror
-# FLAGS = -Wall -Wextra -Werror -fsanitize=address
+FLAGS = -Wall -Wextra -Werror -O3
+# FLAGS = -Wall -Wextra -Werror -fsanitize=address -O1
 INCLUDES = -I includes/ -I includes/SDLX/
 
 SDL_LIB = -L ~/.brew/lib -l SDL2 -l sdl2_image -l SDL2_ttf
@@ -28,8 +28,13 @@ SDLX_NAMES = 			\
 # List of all the source files.
 SRC_NAMES = \
 	$(addprefix $(SDLX_DIR), $(SDLX_NAMES))	\
-	input \
+	boundary \
+	circle \
+	clerp \
+	concurrent \
 	main \
+	pellets \
+	shader \
 
 # List of all the source files, folders are to be added by
 # including a $(addprefix, DIR_NAME, $(DIR_FILES))
